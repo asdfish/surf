@@ -19,4 +19,5 @@ else
   cargo build --target wasm32-unknown-unknown
 fi
 
-wasm-bindgen --target web --out-dir ../wasm ./target/wasm32-unknown-unknown/${TARGET}/game.wasm
+wasm-bindgen --target web --no-typescript \
+  --out-dir ./wasm ./target/wasm32-unknown-unknown/${TARGET}/game.wasm

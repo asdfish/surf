@@ -7,5 +7,5 @@ edition = "2024"
 crate-type = ["cdylib", "rlib"]
 
 [dependencies]
-bevy = { version = "0.16.1", default-features = false }
+bevy = { version = "0.16.1", default-features = false, features = ["bevy_log"] }
 wasm-bindgen = { version = "0.2.100", default-features = false }
