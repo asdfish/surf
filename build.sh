@@ -4,7 +4,7 @@ set -e
 
 TARGET=""
 
-if [ "$1" == "debug" ]; then
+if [ "$1" == "debug" ] || [ -z "$1" ]; then
   TARGET="debug"
 elif [ "$1" == "release" ]; then
   TARGET="release"
